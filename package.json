@@ -1,0 +1,67 @@
+{
+  "name": "zyd-charts",
+  "version": "0.0.1",
+  "description": "rollup build template",
+  "keywords": [
+    "rollup",
+    "lib",
+    "build",
+    "charts"
+  ],
+  "main": "./dist/index-es.js",
+  "scripts": {
+    "dev:docs": "vuepress dev docs",
+    "build:docs": "vuepress build docs",
+    "gen:docs": "vue-docgen",
+    "lib:build": "rollup --bundleConfigAsCjs -c"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "xiaobai.li",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaobaili1992/zyd-charts.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
+    "@babel/preset-env": "^7.23.9",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@vue/babel-plugin-transform-vue-jsx": "^1.4.0",
+    "@vue/babel-preset-jsx": "^1.4.0",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vuepress/core": "^1.9.10",
+    "@vuepress/plugin-register-components": "^1.9.10",
+    "dayjs": "^1.11.11",
+    "rollup": "^4.12.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-serve": "^1.1.1",
+    "rollup-plugin-vue": "5.1.9",
+    "sass": "^1.77.8",
+    "sass-loader": "10",
+    "vue-docgen-api": "^4.79.1",
+    "vue-docgen-cli": "^4.79.0",
+    "vuepress": "^1.9.10"
+  },
+  "dependencies": {
+    "core-js": "2",
+    "echarts": "^5.4.3",
+    "element-ui": "^2.15.14",
+    "vue": "2.6.14",
+    "vue-server-renderer": "2.6.14",
+    "vue-template-compiler": "2.6.14"
+  },
+  "peerDependencies": {
+    "dayjs": "^1.11.11",
+    "element-ui": "^2.15.14",
+    "vue": "2.6.14"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  }
+}
