@@ -10,7 +10,12 @@
 ```vue
 <template>
   <div>
-    <ZydLine ref="zydLine" :loading="loading" :dataSource="dataSource"></ZydLine>
+    <ZydLine
+      ref="zydLine"
+      :loading="loading"
+      :dataSource="dataSource"
+      :emptyData="emptyData"
+    ></ZydLine>
   </div>
 </template>
 
@@ -34,8 +39,7 @@ export default {
     this.loading = true;
     setTimeout(() => {
       this.loading = false;
-      this.dataSource = [];
-      this.$refs.zydLine?.init(this.dataSource);
+      this.dataSource = [150, 230, 224, 218, 135, 147, 260];
     }, 2000);
   },
 };
@@ -51,7 +55,7 @@ export default {
 | Prop name  | Description                      | Type    | Values | Default |
 | ---------- | -------------------------------- | ------- | ------ | ------- |
 | loading    | 按照设计稿，设计稿多高就设置多高 | boolean | -      | false   |
-| dataSource | 按照设计稿，设计稿多高就设置多高 | array   | -      | []      |
-| emptyData  |                                  | object  | -      | {}      |
+| dataSource | 传入的原始数据                   | array   | -      | []      |
+| emptyData  | 按照设计稿，设计稿多高就设置多高 | object  | -      | {}      |
 
 > functional
