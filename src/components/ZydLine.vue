@@ -30,7 +30,7 @@ export default {
     },
     xData: {
       default: () => {
-        return [];
+        return ['one', 'two', 'three', 'four', 'five', 'six', 'seven'];
       },
       type: Array,
     },
